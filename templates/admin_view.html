@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suggestions</title>
+</head>
+<body style="background-color:#e9f5db; padding:20px;">
+    <h2>📬 Decrypted Suggestions</h2>
+    <ul>
+        {% for id, message in suggestions %}
+            <li><strong>{{ id }}:</strong> {{ message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
